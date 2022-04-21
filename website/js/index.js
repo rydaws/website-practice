@@ -11,6 +11,7 @@ var gameState = 0;
 0 - Not active
 1- Active
 */
+
 function toggle(){
     let element = document.getElementById("start");
     let hidden = element.getAttribute("hidden");
