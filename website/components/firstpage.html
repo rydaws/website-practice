@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+    </style>
+    <script src="index.js">
+
+    </script>
+</head>
+
+<body>
+    <h1>Smash or Pass?</h1>
+    <br>
+    <button type="button" class="start" id="startBtn" onclick="startGame()">Start!</button>
+    <br>
+    <br>
+    <button type="button" class="btn1" onclick="iterateImg(); smashClick();">SMASH</button>
+    <p>
+        Smashed: <span id="display1">0</span>
+    </p>
+    <br>
+    <br>
+    <button type="button" class="btn2" onCLick="iterateImg(); passClick();">PASS</button>
+    <p>
+        Passed: <span id="display2">0</span>
+    </p>
+    <img src="ready.jpg" id="mainImage" wdith = "400" height="500"/>
+    <div id="mainImage"></div>
+
+</body>
+
+</html>
