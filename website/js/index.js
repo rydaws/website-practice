@@ -1,4 +1,4 @@
-var images = ["Toucan_Sam.png", "Chef.jpg", "Perry.png", "fish.jpeg", "buzz.png"];
+var images = ["../img/Toucan_Sam.png", "../img/Chef.jpg", "../img/Perry.png", "../img/fish.jpeg", "../img/buzz.png", "../img/campbell.jpeg"];
 var currentImage = 0;
 
 
