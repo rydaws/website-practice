@@ -1,4 +1,6 @@
-var images = ["../img/Toucan_Sam.png", "../img/Chef.jpg", "../img/Perry.png", "../img/fish.jpeg", "../img/buzz.png", "../img/campbell.jpeg"];
+var images = ["../img/Toucan_Sam.png", "../img/Chef.jpg", "../img/Perry.png", "../img/fish.jpeg",
+ "../img/buzz.png", "../img/campbell.jpeg", "../img/mason1.jpg", "../img/mason2.jpg", "../img/mason3.jpg",
+"../img/mario1.jpg", "../img/kyle1.jpg", "../img/zach1.jpg"];
 var currentImage = 0;
 
 
