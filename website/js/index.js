@@ -12,22 +12,12 @@ var gameState = 0;
 1- Active
 */
 
-function toggle(){
-    let element = document.getElementById("start");
-    let hidden = element.getAttribute("hidden");
-
-    if (hidden) {
-       element.removeAttribute("hidden");
-    } else {
-       element.setAttribute("hidden", "hidden");
-    }
-  
-}
-
 function startGame() {
     gameState = 1;
     iterateImg();
     document.getElementById("startBtn").style.display = "none";
+    document.getElementById("smashBtn").style.display = "block";
+    document.getElementById("passBtn").style.display = "block";
     
 }
 

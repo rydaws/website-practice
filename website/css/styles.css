@@ -1,4 +1,20 @@
+body{
+    background-color: #4D96FF;
+    font-family: RobotoMono;
+}
+@font-face {
+    font-family: RobotoMono;
+    src: url('../fonts/RobotoMono-VariableFont_wght.ttf');
+}
+
+h1{
+    font-family: RobotoMono;
+}
+
 .btn1 {
+    font-family: RobotoMono;
+    height: 50px;
+    position: relative;
     text-decoration: none;
     border: none;
     padding: 12px 40px;
@@ -20,6 +36,8 @@
 }
 
 .btn2 {
+    font-family: RobotoMono;
+    height: 50px;
     text-decoration: none;
     border: none;
     padding: 12px 40px;
@@ -40,6 +58,8 @@
     /* Lowering the shadow */
 }
 .start {
+    font-family: RobotoMono;
+    height: 50px;
     text-decoration: none;
     border: none;
     padding: 12px 40px;
