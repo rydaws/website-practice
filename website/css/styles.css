@@ -1,20 +1,19 @@
 body{
     background-color: #4D96FF;
     font-family: RobotoMono;
+
 }
 @font-face {
     font-family: RobotoMono;
     src: url('../fonts/RobotoMono-VariableFont_wght.ttf');
 }
-
-h1{
-    font-family: RobotoMono;
+head{
+    text-align: center;
 }
 
 .btn1 {
     font-family: RobotoMono;
     height: 50px;
-    position: relative;
     text-decoration: none;
     border: none;
     padding: 12px 40px;
