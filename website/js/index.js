@@ -15,6 +15,23 @@ var images = [
   "../img/akash.jpg",
   "../img/ayman.jpg",
 ];
+var imageDesc = [
+  "Toucan Sampath",
+  "Chef Boyardee",
+  "Perry the Platypus",
+  "Gilbert",
+  "Buzz Lightyear",
+  "Campbell Soup",
+  "Mason",
+  "Mason",
+  "Mason",
+  "Mario being sus",
+  "Kyle!",
+  "Zach <3",
+  "The Best Beatle",
+  "Akash",
+  "Reinhardt"
+];
 var currentImage = 0;
 var count1 = 0;
 var count2 = 0;
@@ -28,8 +45,9 @@ function startGame() {
   gameState = 1;
   iterateImg();
   document.getElementById("startBtn").style.display = "none";
-  document.getElementById("smashBtn").style.display = "block";
-  document.getElementById("passBtn").style.display = "block";
+  document.getElementById("smashBtn").removeAttribute("hidden");
+  document.getElementById("passBtn").removeAttribute("hidden");
+  document.getElementById("imgDesc").removeAttribute("hidden");
 }
 
 function smashClick() {
@@ -55,5 +73,10 @@ function iterateImg() {
     }
 
     document.getElementById("mainImage").src = images[currentImage];
+    if (imageDesc[currentImage] != null) {
+      document.getElementById("imgDesc").innerHTML = imageDesc[currentImage];
+    } else {
+      document.getElementById("imgDesc").innerHTML = "Null";
+    }
   }
 }

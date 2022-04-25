@@ -1,13 +1,16 @@
 body{
     background-color: #4D96FF;
     font-family: RobotoMono;
-
+    text-align: center;
 }
 @font-face {
     font-family: RobotoMono;
     src: url('../fonts/RobotoMono-VariableFont_wght.ttf');
 }
 head{
+    text-align: center;
+}
+div{
     text-align: center;
 }
 
