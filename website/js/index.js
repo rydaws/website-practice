@@ -40,7 +40,7 @@ var gameState = 0;
 0 - Not active
 1- Active
 */
-
+document.getElementById("clickCount").innerHTML = localStorage.clickcount;
 function startGame() {
   gameState = 1;
   iterateImg();
@@ -48,12 +48,14 @@ function startGame() {
   document.getElementById("smashBtn").removeAttribute("hidden");
   document.getElementById("passBtn").removeAttribute("hidden");
   document.getElementById("imgDesc").removeAttribute("hidden");
+  document.getElementById("clickCount").innerHTML = localStorage.clickcount;
 }
 
 function smashClick() {
   if (gameState == 1) {
     count1++;
     document.getElementById("display1").innerHTML = count1;
+    increaseClick();
   }
 }
 
@@ -61,6 +63,7 @@ function passClick() {
   if (gameState == 1) {
     count2++;
     document.getElementById("display2").innerHTML = count2;
+    increaseClick();
   }
 }
 
@@ -80,3 +83,12 @@ function iterateImg() {
     }
   }
 }
+function increaseClick(){
+if (localStorage.clickcount) {
+  localStorage.clickcount = Number(localStorage.clickcount) + 1;
+} else {
+  localStorage.clickcount = 1;
+}
+document.getElementById("clickCount").innerHTML = localStorage.clickcount;
+}
+//Make a statistics page with number of clicks
