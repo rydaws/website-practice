@@ -30,7 +30,7 @@ var imageDesc = [
   "Zach <3",
   "The Best Beatle",
   "Akash",
-  "Reinhardt"
+  "Reinhardt",
 ];
 var currentImage = 0;
 var count1 = 0;
@@ -83,12 +83,12 @@ function iterateImg() {
     }
   }
 }
-function increaseClick(){
-if (localStorage.clickcount) {
-  localStorage.clickcount = Number(localStorage.clickcount) + 1;
-} else {
-  localStorage.clickcount = 1;
-}
-document.getElementById("clickCount").innerHTML = localStorage.clickcount;
+function increaseClick() {
+  if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+  } else {
+    localStorage.clickcount = 1;
+  }
+  document.getElementById("clickCount").innerHTML = localStorage.clickcount;
 }
 //Make a statistics page with number of clicks
