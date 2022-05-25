@@ -78,11 +78,11 @@ head{
     /* Lowering the shadow */
 }
 
-.about{
-    
-}
-.about:active{
-
+.about-page-text{
+    text-align: center;
+    display: inline-block;
+    width: 750px;
+    word-wrap: normal;
 }
 
 .top-nav{

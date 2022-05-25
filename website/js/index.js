@@ -49,6 +49,8 @@ function startGame() {
   document.getElementById("passBtn").removeAttribute("hidden");
   document.getElementById("imgDesc").removeAttribute("hidden");
   document.getElementById("clickCount").innerHTML = localStorage.clickcount;
+  document.getElementById("numSmashes").innerHTML = localStorage.totalSmashes;
+  document.getElementById("numPasses").innerHTML = localStorage.totalPasses;
 }
 
 function smashClick() {
@@ -56,6 +58,7 @@ function smashClick() {
     count1++;
     document.getElementById("display1").innerHTML = count1;
     increaseClick();
+    totalSmashes();
   }
 }
 
@@ -64,6 +67,7 @@ function passClick() {
     count2++;
     document.getElementById("display2").innerHTML = count2;
     increaseClick();
+    totalPasses();
   }
 }
 
@@ -89,6 +93,29 @@ function increaseClick() {
   } else {
     localStorage.clickcount = 1;
   }
+
+
+
   document.getElementById("clickCount").innerHTML = localStorage.clickcount;
+
+}
+
+function totalSmashes(){
+  if (localStorage.smashCount) {
+    localStorage.smashCount = Number(localStorage.smashCount) + 1;
+  } else {
+    localStorage.smashCount
+  }
+  document.getElementById("numSmashes").innerHTML = localStorage.smashCount;
+}
+
+function totalPasses(){
+  if (localStorage.passCount) {
+    localStorage.passCount = Number(localStorage.passCount) + 1;
+  } else {
+    localStorage.passCount = 1;
+  }
+  document.getElementById("numPasses").innerHTML = localStorage.passCount; 
+
 }
 //Make a statistics page with number of clicks
